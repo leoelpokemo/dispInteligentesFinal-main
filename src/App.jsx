@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     async function loadCards() {
       try {
-        const data = await api.getallcards();
+        const data = await api.getAllcards();
         setCards(data);
       } catch (error) {
         console.error(error);

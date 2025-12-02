@@ -32,14 +32,14 @@ class Api {
       headers: this._headers,
     }).then(this._handserveresponse)
   }
-  getallcards() {
+  getAllcards() {
     return fetch(`${this._baseUrl}/getAllCards`, {
       headers: this._headers,
     }).then(this._handserveresponse);
   }
 }
 
-const api = new Api("https://dispinteligentes9b.onrender.com", {
+const api = new Api("https://api-requests-lcy6.onrender.com", {
   "Content-Type": "application/json",
 });
 

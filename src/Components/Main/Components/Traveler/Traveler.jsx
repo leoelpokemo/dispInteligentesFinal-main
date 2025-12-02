@@ -26,12 +26,12 @@ function Traveler({ onCreateCard }) {
 
       <img
         className="traveler-profile__image"
-        src="src/assets/images/632510e53b3ae17f36993d7993c9fe8f.jpg"
+        src="src\assets\images\mog.jpeg"
         alt="Avatar"
       />
 
       <div className="traveler-profile__details">
-        <h1 className="traveler-profile__name">Alejandro Villa</h1>
+        <h1 className="traveler-profile__name">Leonardo Bobadilla</h1>
 
         <button
           aria-label="Edit traveler profile"
@@ -39,7 +39,7 @@ function Traveler({ onCreateCard }) {
           type="button"
         />
 
-        <p className="traveler-profile__bio">PhD in Information Technology</p>
+        <p className="traveler-profile__bio">Information Technologies</p>
       </div>
       <button
         aria-label="Add new place"
