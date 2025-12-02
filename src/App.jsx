@@ -24,14 +24,17 @@ function App() {
   }, []);
 
   async function handleUpdateCard(card) {
-    const likeinvertido = !card.like;
-
     try {
-      // const updatedCard = await api.updateCard(card._id, likeinvertido);
-      setCards((cards) =>
-        cards.map((c) =>
-          c._id === card._id ? { ...c, like: likeinvertido } : c
-        )
+      const likeinvertido = !card.like;
+      console.log(likeinvertido);
+      await api.updateCard(card._id, likeinvertido);
+      const temp = {...card, like: likeinvertido };
+      console.log(temp);
+
+      setCards((prev) =>
+        prev.map((element) => {
+          return element._id === temp._id ? temp : element;
+        })
       );
     } catch (error) {
       console.error(error);
