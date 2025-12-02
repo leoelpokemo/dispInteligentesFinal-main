@@ -12,7 +12,7 @@ class Api {
   }
   updateCard(cardId,like){
     return fetch(`${this._baseUrl}/updateCard/${cardId}`,{
-      method:"PUT",
+      method:"PATCH",
       headers: this._headers,
       body: JSON.stringify({
         like
