@@ -1,5 +1,6 @@
 import React from "react";
 import "./Traveler.css";
+import olaImage from '../assets/images/ola.jpg';
 
 function Traveler({ onCreateCard }) {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -26,7 +27,7 @@ function Traveler({ onCreateCard }) {
 
       <img
         className="traveler-profile__image"
-        src="./images/ola.jpg"
+        src= {olaImage}
         alt="Avatar"
       />
 
