@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
@@ -41,10 +39,9 @@ function App() {
     }
   }
   async function handleDeleteCard(card) {
-    await api.deleteCard(card._id);
-
-    setCards((cards) => cards.filter((c) => c._id !== card._id));
     try {
+      await api.deleteCard(card._id);
+      setCards((cards) => cards.filter((c) => c._id !== card._id));
     } catch (error) {
       console.error(error);
     }
