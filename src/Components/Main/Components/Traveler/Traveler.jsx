@@ -27,7 +27,7 @@ function Traveler({ onCreateCard }) {
 
       <img
         className="traveler-profile__image"
-        src="src/assets/images/ola.jpg"
+        src="./assets/images/ola.jpg"
         alt="Avatar"
       />
 
